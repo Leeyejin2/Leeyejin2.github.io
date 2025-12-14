@@ -190,15 +190,16 @@
     gap: 3.2rem;
 }
 
-.contents-wrap.etc-event-sticker {
+.contents-wrap.etc-event-wrap {
+    flex-flow: column;
+}
+
+.contents-wrap.etc-event-wrap.row {
     flex-flow: row;
 }
 
-.contents-wrap.etc-event-sticker .contents-box {
-    display: flex;
+.contents-box.etc-event.column {
     flex-flow: column;
-    align-items: flex-start;
-    gap: 3.2rem;
 }
 
 
