@@ -187,6 +187,18 @@
 
 .contents-box.etc-event {
     align-items: flex-start;
+    gap: 3.2rem;
+}
+
+.contents-wrap.etc-event-sticker {
+    flex-flow: row;
+}
+
+.contents-wrap.etc-event-sticker .contents-box {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 3.2rem;
 }
 
 

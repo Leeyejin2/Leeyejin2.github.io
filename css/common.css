@@ -158,6 +158,10 @@
     overflow: hidden;
 }
 
+#project article {
+    margin-top: 10rem;
+}
+
 .project-left {
     display: flex;
     flex-flow: column;
@@ -212,6 +216,7 @@
     font-family: "OA Gothic";
     font-size: var(--font-medium);
     color: var(--color-gray);
+    padding-bottom: 6px;
     margin-right: 1.4rem;
     transition: all 0.3s ease;
 }
