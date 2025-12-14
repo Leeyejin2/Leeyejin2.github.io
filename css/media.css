@@ -1,0 +1,53 @@
+  /*
+  Size by device
+  320px — 480px: Mobile devices,
+  481px — 768px: iPads,
+  Tablets 769px — 1024px: Small screens,
+  laptops 1025px — 1200px: Desktops,
+  large screens 1201px and more — Extra large screens, TV 
+  */
+  
+  
+  @media (max-width:1280px) {
+  
+   
+  }
+  
+  @media (max-width:1024px) {
+    .header {
+        width: calc(100% - 160px);
+    }
+
+    .visual-wrap {
+        width: calc(100% - 160px);
+    }
+
+    .visual-txt {
+        margin-top: var(--space-regular);
+    }
+
+    .visual-txt p {
+        font-size: var(--font-medium);
+    }
+
+    .section.contents {
+        width: calc(100% - 160px);
+    }
+
+    .section.about {
+        flex-flow: column;
+        width: calc(100% - 160px);
+        margin: 10rem auto;
+    }
+
+    .about-sub-txt {
+        white-space: normal;
+    }
+  }
+  
+  @media (max-width:768px) {}
+  
+ 
+  @media (max-width:768px) and (min-width:320px) {
+    
+  }

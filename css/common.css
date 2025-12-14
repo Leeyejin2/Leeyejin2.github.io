@@ -38,6 +38,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 1;
 }
 
 .header .home {
@@ -56,6 +57,8 @@
     font-family: "OA Gothic";
     font-size: var(--font-medium);
     padding: 0 var(--space-large);
+    word-break: keep-all;
+    white-space: nowrap;
 }
 
 .section {
@@ -73,6 +76,14 @@
     align-items: center;
     background: url(./images/main_visual.png) no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.visual-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .visual-tit{
@@ -89,6 +100,17 @@
 
 .visual-txt p {
     font-size: var(--font-large);
+}
+
+.scroll-down {
+    font-family: "SB Aggro";
+    font-weight: 300;
+    font-size: var(--font-small);
+    color: var(--color-gray);
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    transform: translate(-50%, 0);
 }
 
 .section.contents {
@@ -259,6 +281,7 @@
     display: flex;
     flex-flow: row nowrap;
     width: calc(100% - 320px);
+    gap: 4rem;
     justify-content: center;
     align-items: center;
     margin: 16rem auto;
@@ -275,7 +298,6 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    margin-left: 4rem;
 }
 
 .introduce-box {
