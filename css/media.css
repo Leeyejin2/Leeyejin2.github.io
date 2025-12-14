@@ -9,11 +9,6 @@
   
   
   @media (max-width:1280px) {
-  
-   
-  }
-  
-  @media (max-width:1024px) {
     .header {
         width: calc(100% - 160px);
     }
@@ -21,6 +16,10 @@
     .visual-wrap {
         width: calc(100% - 160px);
     }
+  }
+  
+  @media (max-width:1024px) {
+    
 
     .visual-txt {
         margin-top: var(--space-regular);
@@ -42,6 +41,10 @@
 
     .about-sub-txt {
         white-space: normal;
+    }
+
+    .project-left .project-detail .text {
+        margin-left: var(--space-small);
     }
   }
   
