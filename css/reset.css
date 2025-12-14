@@ -1,0 +1,298 @@
+/* CSS Document*/
+
+/*font import*/
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-display: swap;
+    src: local("Pretendard ExtraBold"),
+        url("/css/fonts/Pretendard-ExtraBold.subset.woff2") format("woff2"),
+        url("/css/fonts/Pretendard-ExtraBold.subset.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"),
+        url("/css/fonts/Pretendard-Bold.subset.woff2") format("woff2"),
+        url("/css/fonts/Pretendard-Bold.subset.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: local("Pretendard SemiBold"),
+        url("/css/fonts/Pretendard-SemiBold.subset.woff2") format("woff2"),
+        url("/css/fonts/Pretendard-SemiBold.subset.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"),
+        url("/css/fonts/Pretendard-Medium.subset.woff2") format("woff2"),
+        url("/css/fonts/Pretendard-Medium.subset.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"),
+        url("/css/fonts/Pretendard-Regular.subset.woff2") format("woff2"),
+        url("/css/fonts/Pretendard-Regular.subset.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local("Pretendard Light"),
+        url("/css/fonts/Pretendard-Light.subset.woff2") format("woff2"),
+        url("/css/fonts/Pretendard-Light.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'OAGothic';
+  font-weight: 800;
+  font-display: swap;
+  src: local("OAGothic ExtraBold"),
+        url("/css/fonts/OAGothic-ExtraBold.woff2") format("woff2"),
+        url("/css/fonts/OAGothic-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'OAGothic';
+  font-weight: 500;
+  font-display: swap;
+  src: local("OAGothic Medium"),
+        url("/css/fonts/OAGothic-Medium.woff2") format("woff2"),
+        url("/css/fonts/OAGothic-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 800;
+    font-display: swap;
+    src: local("SBAggro Bold"),
+        url("/css/fonts/SBAggro-Bold.woff2") format("woff2"),
+        url("/css/fonts/SBAggro-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 500;
+    font-display: swap;
+    src: local("SBAggro Medium"),
+        url("/css/fonts/SBAggro-Medium.woff2") format("woff2"),
+        url("/css/fonts/SBAggro-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'SBAggro';
+    font-weight: 300;
+    font-display: swap;
+    src: local("SBAggro Light"),
+        url("/css/fonts/SBAggro-Light.woff2") format("woff2"),
+        url("/css/fonts/SBAggro-Light.woff") format("woff");
+}
+
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  
+  *,
+  :after,
+  :before {
+    box-sizing: inherit;
+    font-family: "Pretendard", sans-serif;
+  }
+  
+  blockquote,
+  body,
+  dd,
+  dl,
+  dt,
+  fieldset,
+  figure,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  html,
+  iframe,
+  legend,
+  li,
+  ol,
+  p,
+  pre,
+  textarea,
+  ul {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  pre {
+    font-weight: 400;
+    font-size: var(--font-medium);
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+    font-size: var(--font-medium);
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  button,
+  input,
+  select {
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    background: transparent;
+    font-size: var(--font-medium);
+  }
+  
+  button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  iframe {
+    border: 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  td,
+  th {
+    padding: 0;
+    font-size: var(--font-medium);
+  }
+  
+  dl,
+  dt,
+  dd {
+    font-size: var(--font-medium);
+  }
+  
+  a,
+  a:hover,
+  a:visited {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+  
+  i {
+      font-style : normal;
+  }
+
+  /* style var */
+
+:root {
+
+    /* color */
+    --color-white: #fff;
+    --color-black: #333;
+    --color-back: #030400;
+    --color-gray: #ccc;
+    --color-darkgray: #666;
+  
+    /* fonts */
+    --font-min: 1.4rem;
+    --font-small: 1.6rem;
+    --font-regular: 1.8rem;
+    --font-medium: 2rem;
+    --font-large: 2.4rem;
+    --font-max: 3.2rem;
+    --font-sub: 4rem;
+    --font-tit: 6rem;
+  
+    /* size */
+    --space-min: 1.2rem;
+    --space-small: 2rem;
+    --space-regular: 2.4rem;
+    --space-medium: 3rem;
+    --space-large: 5rem;
+  
+    --width-gut: ;
+    --width-col: ;
+    --width-min: ;
+    --width-small: ;
+    --width-regular: ;
+    --width-medium: ;
+    --width-large: ;
+  }
+  
+  
+  
+  /*
+  Size by device
+  320px — 480px: Mobile devices,
+  481px — 768px: iPads,
+  Tablets 769px — 1024px: Small screens,
+  laptops 1025px — 1200px: Desktops,
+  large screens 1201px and more — Extra large screens, TV 
+  */
+  
+  
+  @media (max-width:1280px) {
+  
+   
+  }
+  
+  @media (max-width:1024px) {
+    
+  }
+  
+  @media (max-width:768px) {}
+  
+ 
+  @media (max-width:768px) and (min-width:320px) {
+    
+  }

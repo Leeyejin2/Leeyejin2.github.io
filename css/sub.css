@@ -1,0 +1,246 @@
+/* SUB CSS Document*/
+
+.wrap.sub {
+    color: var(--color-black);
+}
+
+.section.sub-visual {
+    display: block;
+    height: 100%;
+    max-height: 846px;
+    border-top: 1px solid var(--color-gray);
+    margin-top: 10rem;
+}
+
+.sub-visual-txt {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 60rem;
+    margin-left: 16rem;
+    margin-top: 17.8rem;
+}
+
+.sub-visual-txt .category {
+    font-family: "OA Gothic";
+}
+
+.sub-visual-txt .project-name {
+    font-family: "SB Aggro";
+    font-size: var(--font-sub);
+    line-height: 58px;
+    margin: 2rem 0 4rem;
+    word-break: auto-phrase;
+}
+
+.sub-visual-txt .project-detail {
+    font-weight: 400;
+    line-height: 32px;
+    word-break: break-word;
+}
+
+.section.contents.sub {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+}
+
+.section.contents.sub .project-tit {
+    margin-bottom: var(--space-large);
+}
+
+.section.contents.sub .project-tit p {
+    font-family: "SB Aggro";
+}
+
+.section.contents.sub .project-tit .icon {
+    background: url(../css/images/star_black.svg);
+    margin-bottom: 7px;
+}
+
+.section.contents.sub .project-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: calc(var(--space-large) * 2);
+}
+
+.btn-wrap {
+    display: block;
+    border: 1px solid var(--color-gray);
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 1.2rem 2rem 1rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.btn-wrap .prev {
+    font-family: "SB Aggro";
+    font-size: var(--font-regular);
+    color: var(--color-darkgray);
+    transition: all 0.4s ease;
+}
+
+.btn-wrap:hover {
+    border-color: var(--color-black);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-wrap:hover .prev {
+    color: var(--color-black);
+}
+
+.footer.sub {
+    background: var(--color-gray);
+}
+
+.footer.sub .right {
+    color: var(--color-darkgray);
+}
+
+/* contents */
+
+.section.sub-visual.onbada-news {
+    height: 846px;
+    background: url(../css/images/contents_visual_01.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contents-wrap {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-large);
+}
+
+.contents-wrap.event-cardnews {
+    flex-flow: row nowrap;
+}
+
+.contents-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.contents-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-small);
+    margin-bottom: var(--space-small);
+}
+
+.contents-container .contents-box:last-child {
+    margin-bottom: 0;
+}
+
+.contents-container .contents-box .contents-img {
+    display: inline-flex;
+}
+
+.section.sub-visual.youtube-template {
+    height: 846px;
+    background: url(../css/images/contents_visual_02.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sub-visual.sns-banner {
+    height: 846px;
+    background: url(../css/images/contents_visual_03.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contents-wrap.youtube-template {
+    flex-flow: column;
+    gap: 3.2rem;
+}
+
+.contents-wrap.youtube-template .contents-box {
+    gap: 3.2rem;
+    margin-bottom: 0;
+}
+
+.contents-img {
+    display: inline-flex;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+}
+
+.section.sub-visual.etc-event-template {
+    height: 846px;
+    background: url(../css/images/contents_visual_04.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contents-box.etc-event {
+    align-items: flex-start;
+}
+
+
+/* ediorial */
+.section.sub-visual.onbada-poster {
+    height: 846px;
+    background: url(../css/images/editorial_visual_01.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.editorial-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editorial-wrap .editorial-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: var(--space-large);
+}
+
+.editorial-wrap .editorial-box:last-child {
+    margin-bottom: 0;
+}
+
+.editorial-img {
+    display: inline-flex;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+}
+
+.section.sub-visual.business-proposal {
+    height: 846px;
+    background: url(../css/images/editorial_visual_02.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sub-visual.bigdata-leaflet {
+    height: 846px;
+    background: url(../css/images/editorial_visual_03.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sub-visual.khoa-poster {
+    height: 846px;
+    background: url(../css/images/editorial_visual_04.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}

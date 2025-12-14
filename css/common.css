@@ -1,0 +1,368 @@
+/* common CSS Document*/
+
+.wrap {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.wrap.main {
+    color: var(--color-white);
+    background-color: var(--color-back);
+}
+
+.hide {
+    display: block;
+    text-indent: -9999px;
+    white-space: nowrap;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    position: absolute;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 320px);
+    height: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header .home {
+    font-family: "OA Gothic";
+    font-size: var(--font-medium);
+}
+
+.header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header nav ul li a.menu {
+    font-family: "OA Gothic";
+    font-size: var(--font-medium);
+    padding: 0 var(--space-large);
+}
+
+.section {
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+}
+
+.section.visual {
+    display: block;
+    width: 100%;
+    height: 947px;
+    background: url(./images/main_visual.png) no-repeat;
+    background-size: cover;
+}
+
+.visual-tit{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-top: 40rem;
+}
+
+.visual-txt {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-medium);
+}
+
+.visual-txt p {
+    font-size: var(--font-large);
+}
+
+.section.contents {
+    display: block;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+.section.contents article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.project-tit {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--space-small) * 2);
+}
+
+.project-tit .line {
+    display: block;
+    width: 2px;
+    height: 100px;
+    background-color: var(--color-white);
+    margin-bottom: 2.4rem;
+}
+
+.project-tit p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-family: "OA Gothic";
+    font-size: var(--font-max);
+}
+
+.project-tit .icon {
+    display: block;
+    width: 20px;
+    height: 26px;
+    background: url(./images/star.svg) no-repeat;
+}
+
+.mr {
+    margin-right: var(--space-min);
+}
+
+.ml {
+    margin-left: var(--space-min);
+}
+
+.project {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 9rem 6rem 4rem;
+    background-color: var(--color-back);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-left {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% - 20rem);
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.project-left .project-name {
+    font-family: "SB Aggro";
+    font-size: var(--font-sub);
+    font-weight: 500;
+    margin-bottom: calc(var(--space-medium) + var(--space-regular));
+}
+
+.project-left .project-detail {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: var(--space-small);
+}
+
+.project-left ul li:last-child .project-detail {
+    margin-bottom: 0;
+} 
+
+.project-left .project-detail .title {
+    width: 100%;
+    max-width: calc(var(--space-large) + 4.2rem);
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+.project-left .project-detail .text {
+    font-size: var(--font-medium);
+    font-weight: 400;
+    margin-left: var(--space-medium);
+}
+
+.project-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.project-right .more {
+    font-family: "OA Gothic";
+    font-size: var(--font-medium);
+    color: var(--color-gray);
+    margin-right: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.project-right .icon {
+    display: block;
+    width: 15px;
+    height: 10px;
+    background: url(./images/arrow.svg) no-repeat;
+}
+
+.project::after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(3, 4, 0, 100%),
+        rgba(52, 53, 50, 100%)
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
+.project:hover .project-right .more {
+    color: var(--color-white);
+}
+
+.section.about {
+    display: flex;
+    flex-flow: row nowrap;
+    width: calc(100% - 320px);
+    justify-content: center;
+    align-items: center;
+    margin: 16rem auto;
+}
+
+.profile-img {
+    display: block;
+    width: 488px;
+    height: 488px;
+    background: url(./images/profile.svg) no-repeat;
+}
+
+.introduce {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    margin-left: 4rem;
+}
+
+.introduce-box {
+    display: flex;
+    flex-flow: column;
+}
+
+.introduce-box .introduce-main-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-family: "OA Gothic";
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: var(--space-regular);
+}
+
+.introduce h4 .icon {
+    display: block;
+    width: 20px;
+    height: 26px;
+    background: url(./images/star_purple.svg) no-repeat;
+}
+
+.introduce-box .text-decoration {
+    display: inline-block;
+    background: linear-gradient(
+        90deg,
+        #CBB4EE,
+        #914AFF
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-main-txt {
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.about-sub-txt {
+    max-width: 100rem;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: var(--space-small);
+    margin-bottom: var(--space-large);
+    word-wrap: break-word;
+    white-space: break-spaces;
+}
+
+.introduce-box ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.introduce-box ul li p {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+}
+
+.introduce-box ul li p span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.introduce-box ul li p strong {
+    font-weight: 400;
+    margin-left: 4rem;
+}
+
+.introduce-box ul li:first-child {
+    margin-right: 8rem;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1.4rem 0;
+}
+
+.footer .right {
+    font-size: var(--font-regular);
+    font-weight: 300;
+}
+
+.footer.main {
+    background-color: #222;
+}
+
+.footer.main .right {    
+    color: var(--color-gray);
+}
