@@ -105,6 +105,35 @@
     color: var(--color-darkgray);
 }
 
+/* web */
+.section.sub-visual.sea-farm {
+    height: 846px;
+    background: url(../css/images/web_visual_01.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sub-visual.marine-weather {
+    height: 846px;
+    background: url(../css/images/web_visual_02.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sub-visual.marine-weather-gis {
+    height: 846px;
+    background: url(../css/images/web_visual_03.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sub-visual.sate-gis {
+    height: 846px;
+    background: url(../css/images/web_visual_04.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* contents */
 
 .section.sub-visual.onbada-news {

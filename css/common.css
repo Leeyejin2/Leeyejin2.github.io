@@ -289,6 +289,15 @@
     color: var(--color-white);
 }
 
+.web-comment {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    font-size: var(--font-regular);
+    color: vaR(--color-gray);
+    margin-top: var(--space-small);
+}
+
 .section.about {
     display: flex;
     flex-flow: row nowrap;
