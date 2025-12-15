@@ -34,7 +34,7 @@
     width: calc(100% - 320px);
     height: 10rem;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
@@ -293,9 +293,12 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    font-size: var(--font-regular);
-    color: vaR(--color-gray);
     margin-top: var(--space-small);
+}
+
+.web-comment p {
+    font-size: var(--font-regular);
+    color: var(--color-gray);
 }
 
 .section.about {
