@@ -223,11 +223,11 @@
     flex-flow: column;
 }
 
-.contents-wrap.etc-event-wrap.row {
+.row {
     flex-flow: row;
 }
 
-.contents-box.etc-event.column {
+.column {
     flex-flow: column;
 }
 
