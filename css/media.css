@@ -52,5 +52,53 @@
   
  
   @media (max-width:768px) and (min-width:320px) {
-    
+    .header {
+        display: none;
+    }
+
+    .scroll-down {
+        font-size: 1.2rem;
+    }
+
+    .section.contents {
+        width: calc(1100% - 80px);
+    }
+
+    .section.contents article {
+        margin-top: var(--space-medium);
+    }
+
+    .project-tit .line {
+        height: 50px;
+    }
+
+    .project-tit p {
+        font-size: var(--font-large);
+    }
+
+    .project {
+        flex-flow: column;
+        padding: var(--space-small);
+    }
+
+    .project-left {
+        width: 100%;
+    }
+
+    .project-left .project-name {
+        font-size: var(--font-medium);
+    }
+
+    .project-left .project-detail {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .project-left .project-detail .text {
+        margin: 0;
+    }
+
+    .project-right {
+        display: none;
+    }
   }
