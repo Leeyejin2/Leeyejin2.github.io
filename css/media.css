@@ -82,13 +82,17 @@
         height: 50px;
     }
 
+    .project-tit {
+        margin-bottom: var(--space-regular);
+    }
+
     .project-tit p {
         font-size: var(--font-large);
     }
 
     .project {
         flex-flow: column;
-        padding: var(--space-small);
+        padding: var(--space-small) 1.4rem;
     }
 
     .project-left {
@@ -115,8 +119,16 @@
         word-break: auto-phrase;
     }
 
+    .project-left .project-detail {
+        margin-bottom: 1rem;
+    }
+
     .project-right {
         display: none;
+    }
+
+    .web-comment {
+        margin-top: 1rem;
     }
 
     .web-comment p {
